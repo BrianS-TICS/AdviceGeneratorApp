@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 .carta {
+  position: relative;
   border-radius: 1rem;
   background-color: hsl(217deg, 19%, 24%);
   margin-top: 20rem;
-  height: 32rem;
+  height: auto;
   padding: 1rem;
   text-align: center;
   line-height: 2.5rem;
@@ -33,9 +34,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .carta .boton-dado {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: -2rem;
+  margin: auto;
   cursor: pointer;
   margin: 0 auto;
   display: flex;
