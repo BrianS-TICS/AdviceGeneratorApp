@@ -1,0 +1,61 @@
+@use '../base/variables' as v;
+
+.carta{
+
+    border-radius: 1rem;
+    background-color: v.$DarkGrayishBlue;
+    margin-top: 20rem;
+    height: 32rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+
+    .advice{
+        color: v.$NeonGreen;
+        font-size: 1rem;
+        margin-top: 2rem;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .texto{
+        line-height: 3rem;
+        color: v.$LightCyan;
+        font-size: 2rem;
+    }
+
+    .separador{
+        display: block;
+        height: 1.5rem;
+        background-image: url('../img/pattern-divider-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 3rem;
+    }
+
+    .boton-dado{
+
+        cursor: pointer;
+
+        &:hover{
+            -webkit-box-shadow: 10px 10px 92px -8px v.$NeonGreen;
+            -moz-box-shadow: 10px 10px 92px -8px v.$NeonGreen;
+            box-shadow: 10px 10px 92px -8px v.$NeonGreen;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: none;
+
+        background-color: v.$NeonGreen;
+    }
+}

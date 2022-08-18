@@ -1,0 +1,36 @@
+@use 'variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$Principal;
+    font-size: 1.6rem;
+
+    
+    &.fijar-body{
+        overflow: hidden;
+    }
+    
+    &.body-scroll{
+        padding-top: 95px;
+    }
+    
+    background-color: v.$DarkBlue;
+}
+
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+}

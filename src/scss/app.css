@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+.carta {
+  border-radius: 1rem;
+  background-color: hsl(217deg, 19%, 24%);
+  margin-top: 20rem;
+  height: 32rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.carta .advice {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 1rem;
+  margin-top: 2rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.carta .texto {
+  line-height: 3rem;
+  color: hsl(193deg, 38%, 86%);
+  font-size: 2rem;
+}
+.carta .separador {
+  display: block;
+  height: 1.5rem;
+  background-image: url("../img/pattern-divider-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 3rem;
+}
+.carta .boton-dado {
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(150deg, 100%, 66%);
+}
+.carta .boton-dado:hover {
+  -webkit-box-shadow: 10px 10px 92px -8px hsl(150deg, 100%, 66%);
+  -moz-box-shadow: 10px 10px 92px -8px hsl(150deg, 100%, 66%);
+  box-shadow: 10px 10px 92px -8px hsl(150deg, 100%, 66%);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(218deg, 23%, 16%);
+}
+body.fijar-body {
+  overflow: hidden;
+}
+body.body-scroll {
+  padding-top: 95px;
+}
+
+.contenedor {
+  max-width: 90%;
+  margin: 0 auto;
+}
