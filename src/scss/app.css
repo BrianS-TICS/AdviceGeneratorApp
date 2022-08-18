@@ -8,6 +8,11 @@
   text-align: center;
   line-height: 2.5rem;
 }
+@media (min-width: 480px) {
+  .carta {
+    margin-top: 0;
+  }
+}
 .carta .advice {
   color: hsl(150deg, 100%, 66%);
   font-size: 1rem;
@@ -71,8 +76,16 @@ body.fijar-body {
 body.body-scroll {
   padding-top: 95px;
 }
-
 .contenedor {
   max-width: 90%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .contenedor {
+    height: 100vh;
+    max-width: 40rem;
+  }
 }

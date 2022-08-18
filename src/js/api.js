@@ -4,7 +4,6 @@ export async function consultaApi(){
     try {
         const respuesta = await fetch(url);
         const datos = await respuesta.json();
-        console.log(datos.slip);
         return datos.slip;
     } catch (error) {
         console.log(error);

@@ -5,6 +5,10 @@
     border-radius: 1rem;
     background-color: v.$DarkGrayishBlue;
     margin-top: 20rem;
+    @media (min-width : 480px) {
+        margin-top: 0;
+    }
+
     height: 32rem;
     padding: 1rem;
     text-align: center;
