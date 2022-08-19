@@ -8,10 +8,6 @@ setTimeout(() => {
 
 
 dado.addEventListener('click', () => {
-    const spinnerExistente = document.querySelector('.lds-ripple');
-    if (spinnerExistente) {
-        spinnerExistente.remove();
-    }
     cargarSpinner();
     
     setTimeout(() => {
@@ -20,12 +16,18 @@ dado.addEventListener('click', () => {
 });
 
 async function muestraDatosAPI() {
+    const spinnerExistente = document.querySelector('.lds-ripple');
     const pAdvice = document.querySelector('#advice');
     const pTexto = document.querySelector('#texto');
 
+    
     const datos = await consultaApi();
     const { id, advice } = datos;
-
+    
+    if (spinnerExistente) {
+        spinnerExistente.remove();
+    }
+    
     pAdvice.textContent = `Advice ${id}`;
     pTexto.textContent = `"${advice}"`;
 }
