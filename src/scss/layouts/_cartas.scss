@@ -1,10 +1,11 @@
 @use '../base/variables' as v;
 
-.carta{
+.carta {
     position: relative;
     border-radius: 1rem;
     background-color: v.$DarkGrayishBlue;
     margin-top: 20rem;
+
     @media (min-width : 480px) {
         margin-top: 0;
     }
@@ -14,7 +15,7 @@
     text-align: center;
     line-height: 2.5rem;
 
-    .advice{
+    .advice {
         color: v.$NeonGreen;
         font-size: 1rem;
         margin-top: 2rem;
@@ -23,13 +24,13 @@
         margin-bottom: 0;
     }
 
-    .texto{
+    .texto {
         line-height: 3rem;
         color: v.$LightCyan;
         font-size: 2rem;
     }
 
-    .separador{
+    .separador {
         display: block;
         height: 1.5rem;
         background-image: url('../img/pattern-divider-mobile.svg');
@@ -39,7 +40,7 @@
         margin-bottom: 5rem;
     }
 
-    .boton-dado{
+    .boton-dado {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -49,11 +50,11 @@
 
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             -webkit-box-shadow: 10px 10px 92px -8px v.$NeonGreen;
             -moz-box-shadow: 10px 10px 92px -8px v.$NeonGreen;
             box-shadow: 10px 10px 92px -8px v.$NeonGreen;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
 
         margin: 0 auto;
@@ -67,5 +68,60 @@
         border: none;
 
         background-color: v.$NeonGreen;
+    }
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0rem 5rem 0rem 5rem;
+
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid hsl(150deg, 100%, 66%);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
     }
 }
